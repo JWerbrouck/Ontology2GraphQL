@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.iso-icdd.org/part1/2019/Container#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://www.iso-icdd.org/part1/2019/Container">
+  <owl:Ontology rdf:about="">
+    <owl:versionIRI rdf:resource=""/>
+    <dc:rights>This ontology is part of ISO standard ISO 21597-1:2019</dc:rights>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Document">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="priorVersion"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="ExternalDocument"/>
+          <owl:Class rdf:ID="InternalDocument"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="pending"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Document"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#priorVersion"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en-GB">Document</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="name"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">abstract class for references to a document; an individual shall at least be member of ct:ExternalDocument or ct:InternalDocument; and optionally, individuals can be a member of other subtypes of ct:Document such as ct:SecuredDocument and/or ct:EncryptedDocument</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Person">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Party"/>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">a class representing an person for provenance purposes</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">Person</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#ExternalDocument">
+    <rdfs:subClassOf rdf:resource="#Document"/>
+    <rdfs:label xml:lang="en-GB">External Document</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="url"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">a reference to a document outside a container</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Linkset">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="filename"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#priorVersion"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en-GB">Linkset</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#priorVersion"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Linkset"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">a reference to a RDF/OWL file containing links</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="SecuredDocument">
+    <rdfs:comment xml:lang="en-GB">a document secured by a checksum algorithm (see also properties ct:checksum and ct:checksumAlgorithm )</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+    <rdfs:label xml:lang="en-GB">Secured document</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="checksumAlgorithm"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="checksum"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Organisation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Party"/>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">a class representing an organisation for provenance purposes</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">Organisation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Party">
+    <rdfs:label xml:lang="en-GB">Party</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Organisation"/>
+          <owl:Class rdf:about="#Person"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#name"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="en-GB">an abstract class (when the owl:UnionClass is interpreted as a constraint) for ct:Organisation and/or ct:Party; entities can refer to an indvidivual of a subclass of ct:Party via the ct:creator or ct:modifier object properties.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="EncryptedDocument">
+    <rdfs:subClassOf rdf:resource="#Document"/>
+    <rdfs:label xml:lang="en-GB">Encrypted Document</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a reference to an encrypted document</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="FolderDocument">
+    <rdfs:subClassOf rdf:resource="#Document"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="foldername"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en-GB">Folder Document</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a document comprising of multiple files located in one folder, such as a GIS dataset consisting SHP files with associated DBF files</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ContainerDescription">
+    <rdfs:label xml:lang="en-GB">Container</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="publisher"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Linkset"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="containsLinkset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">a description for a ICDD container where all documents are listed and where Link datasets can be found</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="description"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#priorVersion"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#ContainerDescription"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="containsDocument"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Document"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#priorVersion"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="creator"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="conformanceIndicator"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalDocument">
+    <owl:disjointWith rdf:resource="#ExternalDocument"/>
+    <rdfs:label xml:lang="en-GB">Internal document</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="belongsToContainer"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="filetype"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#filename"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#filename"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en-GB">a reference to a document inside a container</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#priorVersion">
+    <rdfs:label xml:lang="en-GB">prior version</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">an optional reference to the prior version of this resource</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#containsLinkset">
+    <rdfs:range rdf:resource="#Linkset"/>
+    <rdfs:comment xml:lang="en-GB">a relation from a ct:ContainerDescription to a ct:Linkset reference. Multiple linkset references are allowed.</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">contains linkset</rdfs:label>
+    <rdfs:domain rdf:resource="#ContainerDescription"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="alternativeDocument">
+    <rdfs:range rdf:resource="#Document"/>
+    <rdfs:comment xml:lang="en-GB">a property to link a document to an alternative version of that document</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">alternative document</rdfs:label>
+    <rdfs:domain rdf:resource="#Document"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#belongsToContainer">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#containsDocument"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#ContainerDescription"/>
+    <rdfs:label xml:lang="en-GB">belongs to container</rdfs:label>
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdfs:comment xml:lang="en-GB">a owl property defining the relation between a document reference and a container</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#containsDocument">
+    <rdfs:comment xml:lang="en-GB">a relation from ct:ContainerDescription to a document reference. Relations to multiple document references is allowed</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">contains model</rdfs:label>
+    <rdfs:domain rdf:resource="#ContainerDescription"/>
+    <owl:inverseOf rdf:resource="#belongsToContainer"/>
+    <rdfs:range rdf:resource="#Document"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="#checksumAlgorithm">
+    <rdfs:label xml:lang="en-GB">checksum algorithm</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">the algorithm used to generate the checksum hash</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SecuredDocument"/>
+          <owl:Class rdf:about="#ContainerDescription"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="userID">
+    <rdfs:comment xml:lang="en-GB">The user defined ID</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en-GB">user ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#filename">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Linkset"/>
+          <owl:Class rdf:about="#InternalDocument"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en-GB">filename</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">the filename a ct:Linkset or ct:InternalDocument; the root corresponds with  the payload-documents folder of the ICDD container. The slash character ("/") must be used as a folder separator.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#url">
+    <rdfs:comment xml:lang="en-GB">the URL where the exterrnal document can be found</rdfs:comment>
+    <rdfs:domain rdf:resource="#ExternalDocument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:label xml:lang="en-GB">document URI</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en-GB">name</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a name for a resource</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="modificationDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="en-GB">modification date</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">The modification date as xsd:dateTime</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="versionDescription">
+    <rdfs:label xml:lang="en-GB">version info</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">an optional character string that may be used to provide a description for a version of the corresponding resource</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#description">
+    <rdfs:label xml:lang="en-GB">description</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">a general description</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#checksum">
+    <rdfs:label xml:lang="en-GB">checksum</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SecuredDocument"/>
+          <owl:Class rdf:about="#ContainerDescription"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en-GB">a checksum hash for the document reference; the checksum algorithm is specified by the property checksumAlgorithm</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="versionID">
+    <rdfs:label xml:lang="en-GB">version ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">an optional character string that may be used to identify a version of the corresponding resource</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="creationDate">
+    <rdfs:comment xml:lang="en-GB">The creation date as xsd:dateTime</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="en-GB">creation date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="format">
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdfs:label xml:lang="en-GB">format (mediatype)</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">The mediatype of a document following the Internet Assigned Numbers Authority's specification (https://www.iana.org/assignments/media-types/media-types.xhtml);examples are 'application/pdf' and 'audio/mpeg'</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="#filetype">
+    <rdfs:comment xml:lang="en-GB">a string that specifies the file type such as  "GML", "IFC", "shp", "xlsx", "pdf","rvt"; the string may be a compound string in indicating also version and data format (e.g. "ifc-4-xml-zip")</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">filetype</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#creator">
+    <rdfs:range rdf:resource="#Party"/>
+    <rdfs:label xml:lang="en-GB">creator</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a reference to a creator of this instance which can only be a ct:Party (or a subclass of ct:Party)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="modifier">
+    <rdfs:range rdf:resource="#Party"/>
+    <rdfs:label xml:lang="en-GB">modifier</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a reference to a modifier of this instance which can only be a ct:Party (or a subclass of ct:Party)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#pending">
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en-GB">pending</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a boolean to indicate whether a document is required or not. When this property is not set the value can be interpreted as 'false'</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#publisher">
+    <rdfs:range rdf:resource="#Party"/>
+    <rdfs:comment xml:lang="en-GB">a reference to the party responsible for making the container available</rdfs:comment>
+    <rdfs:label xml:lang="en-GB">publisher</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#foldername">
+    <rdfs:domain rdf:resource="#FolderDocument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en-GB">foldername</rdfs:label>
+    <rdfs:comment xml:lang="en-GB">a foldername for specifying a folder where a multi file document can be found.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="encryptionAlgorithm">
+    <rdfs:domain rdf:resource="#EncryptedDocument"/>
+    <rdfs:comment xml:lang="en-GB">optional string describing the encryption</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>encryption algorithm</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#conformanceIndicator">
+    <rdfs:label xml:lang="en-GB">conformance indicator</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en-GB">a string based indicator for ct:ContainerDescription to show to which part of the Standar this container conforms: for a Part 1 container, the value should be set to "ICDD-Part1-Container"; the range is not restricted to allow other indicator values</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+</rdf:RDF>
+
+

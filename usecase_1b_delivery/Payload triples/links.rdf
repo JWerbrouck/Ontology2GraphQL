@@ -1,0 +1,190 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ls="http://www.iso-icdd.org/part1/2019/Linkset#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.iso-icdd.org/examples/part1/usecase1b/requirements/links.rdf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ct="http://www.iso-icdd.org/part1/2019/Container#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://www.iso-icdd.org/examples/part1/usecase1b/requirements/links.rdf">
+  <owl:Ontology rdf:about="">
+    <ct:versionDescription>first version</ct:versionDescription>
+    <ct:versionID>1</ct:versionID>
+    <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2018-05-28T14:13:28.167</ct:creationDate>
+    <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+    <owl:imports rdf:resource="index.rdf"/>
+    <owl:imports rdf:resource="/part1/2019/Linkset"/>
+  </owl:Ontology>
+  <ls:Link rdf:ID="lfbb6a91b-5411-48a1-a735-2d0033e2b79d">
+    <ct:versionDescription>first version</ct:versionDescription>
+    <ct:versionID>1</ct:versionID>
+    <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2018-05-28T14:13:28.167</ct:creationDate>
+    <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="le990ef4fb-1ed6-4137-ac27-62dcc131e3cd">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="i646849a1-f2ae-49b7-a845-5372695ba27d">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>3</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#id977efa3f-70d3-4896-9b2e-ecaa17a28745"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="le6c6bdfbb-02b6-4621-8963-539c0c781ba7">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="ibca5e8cd-c69d-4eae-91df-ccb3b7dc739e">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>3</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="lea9402420-a5e0-4d77-98e4-6c0b5e1c6b2f">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="id62088d8-745a-46f4-ace6-ebee2f62397c">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>2ptPWWWHjCCfWE1B3yaT2A</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#idec9cea6f-dabf-476f-a095-7ad0de20434d"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:ID="l1a5178ee-a1e1-4b0e-8a28-54b6b3fa2423">
+    <ct:versionDescription>first version</ct:versionDescription>
+    <ct:versionID>1</ct:versionID>
+    <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2018-05-28T14:13:28.167</ct:creationDate>
+    <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="le689ecb78-28a5-4ed1-b21b-c1aaa426a1ef">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasDocument rdf:resource="index.rdf#idfdea7eba-087b-4f8d-9a54-213a1a2c4ca8"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="le9c55ddfa-5c98-4f5d-908c-248dfc7bd03c">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="i14ea3d95-687b-4f56-a8c7-7bfae2d19f26">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>2</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="le69876099-c877-41c2-97bd-fb0d7e257cee">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="i5582b03f-a44a-4d42-b320-da1e090912a7">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>1D_dzaxZf4_QcddQY3uvjg</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#idec9cea6f-dabf-476f-a095-7ad0de20434d"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+  <ls:Link rdf:ID="l01fe6d15-2ba0-4bc2-b338-1c5a84de6f09">
+    <ct:versionDescription>first version</ct:versionDescription>
+    <ct:versionID>1</ct:versionID>
+    <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2018-05-28T14:13:28.167</ct:creationDate>
+    <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="led067b5ac-d8a6-462b-9a15-88c87f4742d8">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="i19d37899-3882-4fc4-9a3d-1f5b537d41cf">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>4</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+    <ls:hasLinkElement>
+      <ls:LinkElement rdf:ID="le3c2bd8ac-91f4-4b98-93cc-2548437f0324">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ls:hasIdentifier>
+          <ls:StringBasedIdentifier rdf:ID="i7bbc69ab-c742-47a1-90db-c3f141bfa73d">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator rdf:resource="index.rdf#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+            <ls:identifier>20dnvrgv16XurcDlSZ1qI3</ls:identifier>
+          </ls:StringBasedIdentifier>
+        </ls:hasIdentifier>
+        <ls:hasDocument rdf:resource="index.rdf#idec9cea6f-dabf-476f-a095-7ad0de20434d"/>
+      </ls:LinkElement>
+    </ls:hasLinkElement>
+  </ls:Link>
+</rdf:RDF>

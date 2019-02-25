@@ -1,0 +1,17 @@
+{
+	"name": "icdd-hgql",
+	"schema": "schemaICDD.graphql",
+	"server": {
+		"port": 8082,
+		"graphql": "/graphql",
+		"graphiql": "/graphiql"
+	},
+	"services": [
+		{
+			"id": "icdd-local",
+			"type": "LocalModelSPARQLService",
+			"filepath": "src/main/resources/ICDD.ttl",
+			"filetype": "TTL"
+		}
+	]
+}

@@ -1,0 +1,420 @@
+type __Context {
+	Directed1toNLink:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#Directed1toNLink")
+	comment:		_@href(iri: "http://www.w3.org/2000/01/rdf-schema#comment")
+	creationDate:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#creationDate")
+	range:		_@href(iri: "http://www.w3.org/2000/01/rdf-schema#range")
+	dateTime:		_@href(iri: "http://www.w3.org/2001/XMLSchema#dateTime")
+	checksumAlgorithm:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#checksumAlgorithm")
+	type:		_@href(iri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+	DatatypeProperty:		_@href(iri: "http://www.w3.org/2002/07/owl#DatatypeProperty")
+	checksum:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#checksum")
+	string:		_@href(iri: "http://www.w3.org/2001/XMLSchema#string")
+	first:		_@href(iri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
+	InternalDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#InternalDocument")
+	minCardinality:		_@href(iri: "http://www.w3.org/2002/07/owl#minCardinality")
+	conformanceIndicator:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#conformanceIndicator")
+	FunctionalProperty:		_@href(iri: "http://www.w3.org/2002/07/owl#FunctionalProperty")
+	queryExpression:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#queryExpression")
+	domain:		_@href(iri: "http://www.w3.org/2000/01/rdf-schema#domain")
+	QueryBasedIdentifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#QueryBasedIdentifier")
+	Restriction:		_@href(iri: "http://www.w3.org/2002/07/owl#Restriction")
+	filetype:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#filetype")
+	description:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#description")
+	label:		_@href(iri: "http://www.w3.org/2000/01/rdf-schema#label")
+	Party:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#Party")
+	belongsToContainer:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#belongsToContainer")
+	ContainerDescription:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#ContainerDescription")
+	identifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#identifier")
+	publisher:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#publisher")
+	Person:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#Person")
+	foldername:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#foldername")
+	maxCardinality:		_@href(iri: "http://www.w3.org/2002/07/owl#maxCardinality")
+	unionOf:		_@href(iri: "http://www.w3.org/2002/07/owl#unionOf")
+	cardinality:		_@href(iri: "http://www.w3.org/2002/07/owl#cardinality")
+	FolderDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#FolderDocument")
+	subClassOf:		_@href(iri: "http://www.w3.org/2000/01/rdf-schema#subClassOf")
+	Document:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#Document")
+	containsLinkset:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#containsLinkset")
+	ObjectProperty:		_@href(iri: "http://www.w3.org/2002/07/owl#ObjectProperty")
+	identifierField:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#identifierField")
+	hasFromLinkElement:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#hasFromLinkElement")
+	Organisation:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#Organisation")
+	Class:		_@href(iri: "http://www.w3.org/2002/07/owl#Class")
+	hasToLinkElement:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#hasToLinkElement")
+	subPropertyOf:		_@href(iri: "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
+	hasLinkElement:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#hasLinkElement")
+	creator:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#creator")
+	DirectedBinaryLink:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#DirectedBinaryLink")
+	DirectedLink:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#DirectedLink")
+	versionDescription:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#versionDescription")
+	disjointWith:		_@href(iri: "http://www.w3.org/2002/07/owl#disjointWith")
+	URIBasedIdentifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#URIBasedIdentifier")
+	userID:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#userID")
+	SecuredDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#SecuredDocument")
+	onProperty:		_@href(iri: "http://www.w3.org/2002/07/owl#onProperty")
+	hasIdentifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#hasIdentifier")
+	filename:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#filename")
+	name:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#name")
+	url:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#url")
+	rest:		_@href(iri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
+	nil:		_@href(iri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil")
+	Linkset:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#Linkset")
+	BinaryLink:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#BinaryLink")
+	Link:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#Link")
+	versionID:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#versionID")
+	modifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#modifier")
+	encryptionAlgorithm:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#encryptionAlgorithm")
+	ExternalDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#ExternalDocument")
+	format:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#format")
+	queryLanguage:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#queryLanguage")
+	Identifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#Identifier")
+	StringBasedIdentifier:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#StringBasedIdentifier")
+	containsDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#containsDocument")
+	EncryptedDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#EncryptedDocument")
+	modificationDate:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#modificationDate")
+	uri:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#uri")
+	anyURI:		_@href(iri: "http://www.w3.org/2001/XMLSchema#anyURI")
+	alternativeDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#alternativeDocument")
+	pending:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#pending")
+	priorVersion:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Container#priorVersion")
+	boolean:		_@href(iri: "http://www.w3.org/2001/XMLSchema#boolean")
+	Thing:		_@href(iri: "http://www.w3.org/2002/07/owl#Thing")
+	equivalentClass:		_@href(iri: "http://www.w3.org/2002/07/owl#equivalentClass")
+	inverseOf:		_@href(iri: "http://www.w3.org/2002/07/owl#inverseOf")
+	allValuesFrom:		_@href(iri: "http://www.w3.org/2002/07/owl#allValuesFrom")
+	LinkElement:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#LinkElement")
+	Ontology:		_@href(iri: "http://www.w3.org/2002/07/owl#Ontology")
+	hasDocument:		_@href(iri: "http://www.iso-icdd.org/part1/2019/Linkset#hasDocument")
+	versionIRI:		_@href(iri: "http://www.w3.org/2002/07/owl#versionIRI")
+	qualifiedCardinality:		_@href(iri: "http://www.w3.org/2002/07/owl#qualifiedCardinality")
+	onClass:		_@href(iri: "http://www.w3.org/2002/07/owl#onClass")
+	intersectionOf:		_@href(iri: "http://www.w3.org/2002/07/owl#intersectionOf")
+	imports:		_@href(iri: "http://www.w3.org/2002/07/owl#imports")
+	maxQualifiedCardinality:		_@href(iri: "http://www.w3.org/2002/07/owl#maxQualifiedCardinality")
+}
+
+type Directed1toNLink @service(id:"icdd-local") {
+	hasFromLinkElement: [LinkElement] @service(id:"icdd-local")
+	hasToLinkElement: [LinkElement] @service(id:"icdd-local")
+}
+
+type comment @service(id:"icdd-local") {
+}
+
+type creationDate @service(id:"icdd-local") {
+}
+
+type range @service(id:"icdd-local") {
+}
+
+type dateTime @service(id:"icdd-local") {
+}
+
+type checksumAlgorithm @service(id:"icdd-local") {
+}
+
+type type @service(id:"icdd-local") {
+}
+
+type DatatypeProperty @service(id:"icdd-local") {
+}
+
+type checksum @service(id:"icdd-local") {
+}
+
+type string @service(id:"icdd-local") {
+}
+
+type first @service(id:"icdd-local") {
+}
+
+type InternalDocument @service(id:"icdd-local") {
+	format: [String] @service(id:"icdd-local")
+	pending: [boolean] @service(id:"icdd-local")
+	alternativeDocument: [Document] @service(id:"icdd-local")
+	filetype: [String] @service(id:"icdd-local")
+	belongsToContainer: [ContainerDescription] @service(id:"icdd-local")
+}
+
+type minCardinality @service(id:"icdd-local") {
+}
+
+type conformanceIndicator @service(id:"icdd-local") {
+}
+
+type FunctionalProperty @service(id:"icdd-local") {
+}
+
+type queryExpression @service(id:"icdd-local") {
+}
+
+type domain @service(id:"icdd-local") {
+}
+
+type QueryBasedIdentifier @service(id:"icdd-local") {
+	queryLanguage: [String] @service(id:"icdd-local")
+	queryExpression: [String] @service(id:"icdd-local")
+}
+
+type Restriction @service(id:"icdd-local") {
+}
+
+type filetype @service(id:"icdd-local") {
+}
+
+type description @service(id:"icdd-local") {
+}
+
+type label @service(id:"icdd-local") {
+}
+
+type Party @service(id:"icdd-local") {
+}
+
+type belongsToContainer @service(id:"icdd-local") {
+}
+
+type ContainerDescription @service(id:"icdd-local") {
+	containsLinkset: [Linkset] @service(id:"icdd-local")
+	containsDocument: [Document] @service(id:"icdd-local")
+}
+
+type identifier @service(id:"icdd-local") {
+}
+
+type publisher @service(id:"icdd-local") {
+}
+
+type Person @service(id:"icdd-local") {
+}
+
+type foldername @service(id:"icdd-local") {
+}
+
+type maxCardinality @service(id:"icdd-local") {
+}
+
+type unionOf @service(id:"icdd-local") {
+}
+
+type cardinality @service(id:"icdd-local") {
+}
+
+type FolderDocument @service(id:"icdd-local") {
+	foldername: [String] @service(id:"icdd-local")
+	format: [String] @service(id:"icdd-local")
+	pending: [boolean] @service(id:"icdd-local")
+	alternativeDocument: [Document] @service(id:"icdd-local")
+	filetype: [String] @service(id:"icdd-local")
+	belongsToContainer: [ContainerDescription] @service(id:"icdd-local")
+}
+
+type subClassOf @service(id:"icdd-local") {
+}
+
+type Document @service(id:"icdd-local") {
+	format: [String] @service(id:"icdd-local")
+	pending: [boolean] @service(id:"icdd-local")
+	alternativeDocument: [Document] @service(id:"icdd-local")
+	filetype: [String] @service(id:"icdd-local")
+	belongsToContainer: [ContainerDescription] @service(id:"icdd-local")
+}
+
+type containsLinkset @service(id:"icdd-local") {
+}
+
+type ObjectProperty @service(id:"icdd-local") {
+}
+
+type identifierField @service(id:"icdd-local") {
+}
+
+type hasFromLinkElement @service(id:"icdd-local") {
+}
+
+type Organisation @service(id:"icdd-local") {
+}
+
+type Class @service(id:"icdd-local") {
+}
+
+type hasToLinkElement @service(id:"icdd-local") {
+}
+
+type subPropertyOf @service(id:"icdd-local") {
+}
+
+type hasLinkElement @service(id:"icdd-local") {
+}
+
+type creator @service(id:"icdd-local") {
+}
+
+type DirectedBinaryLink @service(id:"icdd-local") {
+}
+
+type DirectedLink @service(id:"icdd-local") {
+	hasFromLinkElement: [LinkElement] @service(id:"icdd-local")
+	hasToLinkElement: [LinkElement] @service(id:"icdd-local")
+	hasLinkElement: [LinkElement] @service(id:"icdd-local")
+}
+
+type versionDescription @service(id:"icdd-local") {
+}
+
+type disjointWith @service(id:"icdd-local") {
+}
+
+type URIBasedIdentifier @service(id:"icdd-local") {
+	uri: [anyURI] @service(id:"icdd-local")
+}
+
+type userID @service(id:"icdd-local") {
+}
+
+type SecuredDocument @service(id:"icdd-local") {
+	format: [String] @service(id:"icdd-local")
+	pending: [boolean] @service(id:"icdd-local")
+	alternativeDocument: [Document] @service(id:"icdd-local")
+	filetype: [String] @service(id:"icdd-local")
+	belongsToContainer: [ContainerDescription] @service(id:"icdd-local")
+}
+
+type onProperty @service(id:"icdd-local") {
+}
+
+type hasIdentifier @service(id:"icdd-local") {
+}
+
+type filename @service(id:"icdd-local") {
+}
+
+type name @service(id:"icdd-local") {
+}
+
+type url @service(id:"icdd-local") {
+}
+
+type rest @service(id:"icdd-local") {
+}
+
+type nil @service(id:"icdd-local") {
+}
+
+type Linkset @service(id:"icdd-local") {
+}
+
+type BinaryLink @service(id:"icdd-local") {
+	hasLinkElement: [LinkElement] @service(id:"icdd-local")
+}
+
+type Link @service(id:"icdd-local") {
+	hasLinkElement: [LinkElement] @service(id:"icdd-local")
+}
+
+type versionID @service(id:"icdd-local") {
+}
+
+type modifier @service(id:"icdd-local") {
+}
+
+type encryptionAlgorithm @service(id:"icdd-local") {
+}
+
+type ExternalDocument @service(id:"icdd-local") {
+	url: [anyURI] @service(id:"icdd-local")
+	format: [String] @service(id:"icdd-local")
+	pending: [boolean] @service(id:"icdd-local")
+	alternativeDocument: [Document] @service(id:"icdd-local")
+	filetype: [String] @service(id:"icdd-local")
+	belongsToContainer: [ContainerDescription] @service(id:"icdd-local")
+}
+
+type format @service(id:"icdd-local") {
+}
+
+type queryLanguage @service(id:"icdd-local") {
+}
+
+type Identifier @service(id:"icdd-local") {
+}
+
+type StringBasedIdentifier @service(id:"icdd-local") {
+	identifier: [String] @service(id:"icdd-local")
+	identifierField: [String] @service(id:"icdd-local")
+}
+
+type containsDocument @service(id:"icdd-local") {
+}
+
+type EncryptedDocument @service(id:"icdd-local") {
+	encryptionAlgorithm: [String] @service(id:"icdd-local")
+	format: [String] @service(id:"icdd-local")
+	pending: [boolean] @service(id:"icdd-local")
+	alternativeDocument: [Document] @service(id:"icdd-local")
+	filetype: [String] @service(id:"icdd-local")
+	belongsToContainer: [ContainerDescription] @service(id:"icdd-local")
+}
+
+type modificationDate @service(id:"icdd-local") {
+}
+
+type uri @service(id:"icdd-local") {
+}
+
+type anyURI @service(id:"icdd-local") {
+}
+
+type alternativeDocument @service(id:"icdd-local") {
+}
+
+type pending @service(id:"icdd-local") {
+}
+
+type priorVersion @service(id:"icdd-local") {
+}
+
+type boolean @service(id:"icdd-local") {
+}
+
+type Thing @service(id:"icdd-local") {
+}
+
+type equivalentClass @service(id:"icdd-local") {
+}
+
+type inverseOf @service(id:"icdd-local") {
+}
+
+type allValuesFrom @service(id:"icdd-local") {
+}
+
+type LinkElement @service(id:"icdd-local") {
+	hasDocument: [Document] @service(id:"icdd-local")
+	hasIdentifier: [Identifier] @service(id:"icdd-local")
+}
+
+type Ontology @service(id:"icdd-local") {
+}
+
+type hasDocument @service(id:"icdd-local") {
+}
+
+type versionIRI @service(id:"icdd-local") {
+}
+
+type qualifiedCardinality @service(id:"icdd-local") {
+}
+
+type onClass @service(id:"icdd-local") {
+}
+
+type intersectionOf @service(id:"icdd-local") {
+}
+
+type imports @service(id:"icdd-local") {
+}
+
+type maxQualifiedCardinality @service(id:"icdd-local") {
+}
+

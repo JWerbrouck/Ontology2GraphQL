@@ -1,0 +1,264 @@
+@prefix : <http://www.iso-icdd.org/examples/part1/usecase1b/requirements/index.rdf#> .
+@prefix ct: <http://www.iso-icdd.org/part1/2019/Container#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix default1: <http://www.iso-icdd.org/examples/part1/usecase1b/requirements/links.rdf#> .
+@prefix ls: <http://www.iso-icdd.org/part1/2019/Linkset#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.iso-icdd.org/examples/part1/usecase1b/requirements/links.rdf> a owl:Ontology ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    owl:imports <http://www.iso-icdd.org/examples/part1/usecase1b/requirements/index.rdf>,
+        <http://www.iso-icdd.org/part1/2019/Linkset> .
+
+default1:l01fe6d15-2ba0-4bc2-b338-1c5a84de6f09 a ls:Link ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasLinkElement default1:le3c2bd8ac-91f4-4b98-93cc-2548437f0324,
+        default1:led067b5ac-d8a6-462b-9a15-88c87f4742d8 .
+
+default1:l1a5178ee-a1e1-4b0e-8a28-54b6b3fa2423 a ls:Link ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasLinkElement default1:le689ecb78-28a5-4ed1-b21b-c1aaa426a1ef,
+        default1:le69876099-c877-41c2-97bd-fb0d7e257cee,
+        default1:le9c55ddfa-5c98-4f5d-908c-248dfc7bd03c .
+
+default1:lfbb6a91b-5411-48a1-a735-2d0033e2b79d a ls:Link ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasLinkElement default1:le6c6bdfbb-02b6-4621-8963-539c0c781ba7,
+        default1:le990ef4fb-1ed6-4137-ac27-62dcc131e3cd,
+        default1:lea9402420-a5e0-4d77-98e4-6c0b5e1c6b2f .
+
+<http://www.iso-icdd.org/examples/part1/usecase1b/requirements/index.rdf> a ct:ContainerDescription,
+        owl:Ontology ;
+    ct:conformanceIndicator "ICDD-Part1-Container" ;
+    ct:containsDocument :id977efa3f-70d3-4896-9b2e-ecaa17a28745,
+        :idb6382175-da99-4f19-b620-4e32dca6e16b,
+        :idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0,
+        :idec9cea6f-dabf-476f-a095-7ad0de20434d,
+        :idfdea7eba-087b-4f8d-9a54-213a1a2c4ca8 ;
+    ct:containsLinkset :ls93b78d01-d141-4e9e-bf48-aad7cf2e3ab9 ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:description "icdd showcase 1b:  Delivering the requested information including links between the documents" ;
+    ct:publisher :id2b74e8d3-cf43-44c5-ab71-f325b04f8e36 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    owl:imports <http://www.iso-icdd.org/part1/2019/Container> .
+
+:id2b74e8d3-cf43-44c5-ab71-f325b04f8e36 a ct:Organisation ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:description "a working group preparing Part 1 and Part 2 of the ICDD" ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:idb6382175-da99-4f19-b620-4e32dca6e16b a ct:InternalDocument ;
+    dc:rights "\"no license \"" ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :id56551dad-83e0-45f3-a456-cd79c5138bd3 ;
+    ct:description "Timesheet Excel" ;
+    ct:filename "TimeSheet.xlsx" ;
+    ct:filetype "xlsx" ;
+    ct:format "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ;
+    ct:name "TimeSheetTemplate.xlsx" ;
+    ct:pending false ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:ls93b78d01-d141-4e9e-bf48-aad7cf2e3ab9 a ct:Linkset ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:filename "links.rdf" ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+default1:i14ea3d95-687b-4f56-a8c7-7bfae2d19f26 a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "2" .
+
+default1:i19d37899-3882-4fc4-9a3d-1f5b537d41cf a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "4" .
+
+default1:i5582b03f-a44a-4d42-b320-da1e090912a7 a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "1D_dzaxZf4_QcddQY3uvjg" .
+
+default1:i646849a1-f2ae-49b7-a845-5372695ba27d a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "3" .
+
+default1:i7bbc69ab-c742-47a1-90db-c3f141bfa73d a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "20dnvrgv16XurcDlSZ1qI3" .
+
+default1:ibca5e8cd-c69d-4eae-91df-ccb3b7dc739e a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "3" .
+
+default1:id62088d8-745a-46f4-ace6-ebee2f62397c a ls:StringBasedIdentifier ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:identifier "2ptPWWWHjCCfWE1B3yaT2A" .
+
+default1:le3c2bd8ac-91f4-4b98-93cc-2548437f0324 a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idec9cea6f-dabf-476f-a095-7ad0de20434d ;
+    ls:hasIdentifier default1:i7bbc69ab-c742-47a1-90db-c3f141bfa73d .
+
+default1:le689ecb78-28a5-4ed1-b21b-c1aaa426a1ef a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idfdea7eba-087b-4f8d-9a54-213a1a2c4ca8 .
+
+default1:le69876099-c877-41c2-97bd-fb0d7e257cee a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idec9cea6f-dabf-476f-a095-7ad0de20434d ;
+    ls:hasIdentifier default1:i5582b03f-a44a-4d42-b320-da1e090912a7 .
+
+default1:le6c6bdfbb-02b6-4621-8963-539c0c781ba7 a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0 ;
+    ls:hasIdentifier default1:ibca5e8cd-c69d-4eae-91df-ccb3b7dc739e .
+
+default1:le990ef4fb-1ed6-4137-ac27-62dcc131e3cd a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :id977efa3f-70d3-4896-9b2e-ecaa17a28745 ;
+    ls:hasIdentifier default1:i646849a1-f2ae-49b7-a845-5372695ba27d .
+
+default1:le9c55ddfa-5c98-4f5d-908c-248dfc7bd03c a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0 ;
+    ls:hasIdentifier default1:i14ea3d95-687b-4f56-a8c7-7bfae2d19f26 .
+
+default1:lea9402420-a5e0-4d77-98e4-6c0b5e1c6b2f a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idec9cea6f-dabf-476f-a095-7ad0de20434d ;
+    ls:hasIdentifier default1:id62088d8-745a-46f4-ace6-ebee2f62397c .
+
+default1:led067b5ac-d8a6-462b-9a15-88c87f4742d8 a ls:LinkElement ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" ;
+    ls:hasDocument :idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0 ;
+    ls:hasIdentifier default1:i19d37899-3882-4fc4-9a3d-1f5b537d41cf .
+
+:id977efa3f-70d3-4896-9b2e-ecaa17a28745 a ct:InternalDocument ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :id56551dad-83e0-45f3-a456-cd79c5138bd3 ;
+    ct:description "Issue with the concrete" ;
+    ct:filename "damagedConcrete.jpg" ;
+    ct:filetype "jpg" ;
+    ct:format "image/jpeg" ;
+    ct:name "damagedConcrete.jpg" ;
+    ct:pending false ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:idfdea7eba-087b-4f8d-9a54-213a1a2c4ca8 a ct:InternalDocument ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :id56551dad-83e0-45f3-a456-cd79c5138bd3 ;
+    ct:description "Issue with the Railing" ;
+    ct:filename "RustedRailing.jpg" ;
+    ct:filetype "jpg" ;
+    ct:format "image/jpeg" ;
+    ct:name "RustedRailing.jpg" ;
+    ct:pending false ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0 a ct:InternalDocument ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :id56551dad-83e0-45f3-a456-cd79c5138bd3 ;
+    ct:description "The inspection report" ;
+    ct:filename "InspectionReport.xlsx" ;
+    ct:filetype "xlsx" ;
+    ct:format "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ;
+    ct:name "InspectionReport.xlsx" ;
+    ct:pending false ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:idec9cea6f-dabf-476f-a095-7ad0de20434d a ct:InternalDocument ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :id56551dad-83e0-45f3-a456-cd79c5138bd3 ;
+    ct:description "Viaduct including decomposition" ;
+    ct:filename "Viaduct_48D-100.ifc" ;
+    ct:filetype "ifc" ;
+    ct:format "application/x-extension-ifc" ;
+    ct:name "Viaduct_48D-100.ifc" ;
+    ct:pending false ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:id56551dad-83e0-45f3-a456-cd79c5138bd3 a ct:Organisation ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:description "a organisation " ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+
+:idad118169-4c6a-4afe-9c2a-5d21e6f2a602 a ct:Person ;
+    ct:creationDate "2018-05-28T14:13:28.167000"^^xsd:dateTime ;
+    ct:creator :idad118169-4c6a-4afe-9c2a-5d21e6f2a602 ;
+    ct:description "works at BuildingBits.nl" ;
+    ct:name "Hans Schevers" ;
+    ct:versionDescription "first version" ;
+    ct:versionID "1" .
+

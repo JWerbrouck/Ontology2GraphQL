@@ -1,0 +1,141 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.iso-icdd.org/examples/part1/usecase1b/requirements/index.rdf#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ct="http://www.iso-icdd.org/part1/2019/Container#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://www.iso-icdd.org/examples/part1/usecase1b/requirements/index.rdf">
+  <ct:ContainerDescription rdf:about="">
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:ID="idec9cea6f-dabf-476f-a095-7ad0de20434d">
+        <ct:filename>Viaduct_48D-100.ifc</ct:filename>
+        <ct:filetype>ifc</ct:filetype>
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:creator>
+          <ct:Organisation rdf:ID="id56551dad-83e0-45f3-a456-cd79c5138bd3">
+            <ct:versionDescription>first version</ct:versionDescription>
+            <ct:versionID>1</ct:versionID>
+            <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2018-05-28T14:13:28.167</ct:creationDate>
+            <ct:creator>
+              <ct:Person rdf:ID="idad118169-4c6a-4afe-9c2a-5d21e6f2a602">
+                <ct:versionDescription>first version</ct:versionDescription>
+                <ct:versionID>1</ct:versionID>
+                <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                >2018-05-28T14:13:28.167</ct:creationDate>
+                <ct:creator rdf:resource="#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+                <ct:description>works at BuildingBits.nl</ct:description>
+                <ct:name>Hans Schevers</ct:name>
+              </ct:Person>
+            </ct:creator>
+            <ct:description>a organisation </ct:description>
+          </ct:Organisation>
+        </ct:creator>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:description>Viaduct including decomposition</ct:description>
+        <ct:versionID>1</ct:versionID>
+        <ct:format>application/x-extension-ifc</ct:format>
+        <ct:name>Viaduct_48D-100.ifc</ct:name>
+        <ct:pending rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</ct:pending>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:versionDescription>first version</ct:versionDescription>
+    <ct:conformanceIndicator>ICDD-Part1-Container</ct:conformanceIndicator>
+    <ct:description>icdd showcase 1b:  Delivering the requested information including links between the documents</ct:description>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:ID="idd9292d86-a0ed-4dd4-8e5b-ae1437bf40c0">
+        <ct:creator rdf:resource="#id56551dad-83e0-45f3-a456-cd79c5138bd3"/>
+        <ct:pending rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</ct:pending>
+        <ct:filename>InspectionReport.xlsx</ct:filename>
+        <ct:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</ct:format>
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:description>The inspection report</ct:description>
+        <ct:name>InspectionReport.xlsx</ct:name>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:filetype>xlsx</ct:filetype>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2018-05-28T14:13:28.167</ct:creationDate>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:ID="idb6382175-da99-4f19-b620-4e32dca6e16b">
+        <ct:versionID>1</ct:versionID>
+        <ct:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</ct:format>
+        <ct:filename>TimeSheet.xlsx</ct:filename>
+        <ct:pending rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</ct:pending>
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:name>TimeSheetTemplate.xlsx</ct:name>
+        <ct:description>Timesheet Excel</ct:description>
+        <ct:filetype>xlsx</ct:filetype>
+        <dc:rights>"no license "</dc:rights>
+        <ct:creator rdf:resource="#id56551dad-83e0-45f3-a456-cd79c5138bd3"/>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:ID="idfdea7eba-087b-4f8d-9a54-213a1a2c4ca8">
+        <ct:description>Issue with the Railing</ct:description>
+        <ct:pending rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</ct:pending>
+        <ct:format>image/jpeg</ct:format>
+        <ct:filetype>jpg</ct:filetype>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:name>RustedRailing.jpg</ct:name>
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:filename>RustedRailing.jpg</ct:filename>
+        <ct:creator rdf:resource="#id56551dad-83e0-45f3-a456-cd79c5138bd3"/>
+        <ct:versionID>1</ct:versionID>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <ct:containsLinkset>
+      <ct:Linkset rdf:ID="ls93b78d01-d141-4e9e-bf48-aad7cf2e3ab9">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ct:filename>links.rdf</ct:filename>
+      </ct:Linkset>
+    </ct:containsLinkset>
+    <ct:containsDocument>
+      <ct:InternalDocument rdf:ID="id977efa3f-70d3-4896-9b2e-ecaa17a28745">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:filetype>jpg</ct:filetype>
+        <ct:description>Issue with the concrete</ct:description>
+        <ct:format>image/jpeg</ct:format>
+        <ct:name>damagedConcrete.jpg</ct:name>
+        <ct:pending rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</ct:pending>
+        <ct:versionID>1</ct:versionID>
+        <ct:creator rdf:resource="#id56551dad-83e0-45f3-a456-cd79c5138bd3"/>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:filename>damagedConcrete.jpg</ct:filename>
+      </ct:InternalDocument>
+    </ct:containsDocument>
+    <owl:imports rdf:resource="/part1/2019/Container"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <ct:creator rdf:resource="#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+    <ct:publisher>
+      <ct:Organisation rdf:ID="id2b74e8d3-cf43-44c5-ab71-f325b04f8e36">
+        <ct:versionDescription>first version</ct:versionDescription>
+        <ct:versionID>1</ct:versionID>
+        <ct:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2018-05-28T14:13:28.167</ct:creationDate>
+        <ct:creator rdf:resource="#idad118169-4c6a-4afe-9c2a-5d21e6f2a602"/>
+        <ct:description>a working group preparing Part 1 and Part 2 of the ICDD</ct:description>
+      </ct:Organisation>
+    </ct:publisher>
+    <ct:versionID>1</ct:versionID>
+  </ct:ContainerDescription>
+</rdf:RDF>
