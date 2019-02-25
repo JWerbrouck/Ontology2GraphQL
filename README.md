@@ -35,3 +35,6 @@ becomes in the schema:
 is not implemented in the schema.
     
 Also, subclasses are currently supported at their domains (e.g. format is a field to both Document as its subclasses InternalDocument, ExternalDocument etc.), but not for their ranges (e.g. containsdocument is, in its class Containerdescription, only mapped to its range [Document]. Because inference of subclasses seems currently not present in HyperGraphQL, suggestions on how to implement this field to subclasses of 'Document', such as 'InternalDocument' etc. are welcome.
+
+Dependencies are: 
+	rdflib (pip install rdflib)
