@@ -30,11 +30,13 @@ def createConfig(location):
 
     return configLocation
 
+# primary function
 def ICDDquerier():
-    # ICDDfolder = str("C:/Users/[username]/Documents/ICDD/usecase_1b_delivery")
+    """ICDDfolder = str("C:/Users/[username]/Documents/ICDD/usecase_1b_delivery")"""
+    # asks user where the ICDD container is located
     ICDDfolder = input("please give the location of the (unzipped) ICDD container:")
     OntoFolder = str(ICDDfolder + "\\Ontology resources")
-    # HyperGraphQLFolder = str("C:/Users/[username]/hypergraphql-master")
+    """HyperGraphQLFolder = str("C:/Users/[username]/hypergraphql-master")"""
     HyperGraphQLFolder = input("please give the location where HyperGraphQL is installed ('hypergraphql-master'): ")
     ICDDgraphLocation = ICDDtripleParser(ICDDfolder, HyperGraphQLFolder)
     ICDDschema = Ontology2HGQL(OntoFolder).HyperGraphQL
